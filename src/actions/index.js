@@ -7,6 +7,7 @@ const API_MAJOR_INDEXES = 'quotes/index?apikey=';
 const FETCH_REQUEST = 'FETCH_REQUEST';
 const FETCH_REQUEST_SUCCESS = 'FETCH_REQUEST_SUCCESS';
 const FETCH_REQUEST_FAILURE = 'FETCH_REQUEST_FAILURE';
+const FETCH_MAJOR_INDEXES = 'FETCH_MAJOR_INDEXES';
 
 
 const fetchRequest = () => ({
@@ -45,5 +46,9 @@ const fetchMajorIndexesAPI = () => dispatch => {
 };
 
 export {
-  fetchMajorIndexesAPI, FETCH_REQUEST, FETCH_REQUEST_SUCCESS, FETCH_REQUEST_FAILURE,
+  fetchMajorIndexesAPI,
+  FETCH_REQUEST,
+  FETCH_REQUEST_SUCCESS,
+  FETCH_REQUEST_FAILURE,
+  FETCH_MAJOR_INDEXES,
 };
