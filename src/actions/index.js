@@ -1,11 +1,11 @@
-// import axios from 'axios';
+import axios from 'axios';
 import list from '../initData';
 
-/* const URL = 'https://financialmodelingprep.com/api/v3/';
+const URL = 'https://financialmodelingprep.com/api/v3/';
 
 
 const KEY = process.env.REACT_APP_API_KEY;
-const API_GET_MAJOR_INDEXES = 'quotes/index?apikey='; */
+const API_GET_MAJOR_INDEXES = 'quotes/index?apikey=';
 
 const FETCH_REQUEST = 'FETCH_REQUEST';
 const FETCH_REQUEST_SUCCESS = 'FETCH_REQUEST_SUCCESS';
@@ -22,32 +22,30 @@ const fetchRequestSuccess = response => ({
   response,
 });
 
-/* const fetchRequestFailure = (response, error = '') => ({
+const fetchRequestFailure = (response, error = '') => ({
   type: FETCH_REQUEST_FAILURE,
   response,
   error,
-}); */
+});
 
 
 const fetchMajorIndexesAPI = () => dispatch => {
   dispatch(fetchRequest());
 
-  /* axios.get(`${URL}${API_GET_MAJOR_INDEXES}${KEY}`)
+  ///* 
+  axios.get(`${URL}${API_GET_MAJOR_INDEXES}${KEY}`)
     .then(response => {
-      console.log(response.data);
       dispatch(fetchRequestSuccess(response.data));
     })
     .catch(error => {
       dispatch(fetchRequestFailure(error));
-    }); */
-
-  dispatch(fetchRequestSuccess(list));
+    });// */
+  //dispatch(fetchRequestSuccess(list));
 };
 
 
 export {
   fetchMajorIndexesAPI,
-  fetchRequestSuccess,
   FETCH_REQUEST,
   FETCH_REQUEST_SUCCESS,
   FETCH_REQUEST_FAILURE,

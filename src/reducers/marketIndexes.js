@@ -4,10 +4,7 @@ const majorIndexesReducer = (state = {}, action) => {
   switch (action.type) {
     case FETCH_MAJOR_INDEXES:
       return {
-        name: action.response.name,
-        price: action.response.price,
-        changesPercentage: action.response.changesPercentage,
-        change: action.response.change,
+        results: [...action.response.results],
       };
     default:
       return state;
