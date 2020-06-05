@@ -2,4 +2,6 @@ import { combineReducers } from 'redux';
 import majorIndexesReducer from './marketIndexes';
 import loaderReducer from './loadReducer';
 
-export default combineReducers({ market: majorIndexesReducer, load: loaderReducer });
+const rootReducer = combineReducers({ majorIndexes: majorIndexesReducer, status: loaderReducer });
+
+export default rootReducer;
