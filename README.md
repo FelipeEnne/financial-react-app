@@ -5,40 +5,64 @@
 
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
-- [Run This App](#run-this-app)
+- [Getting Started](#getting-started)
+- [Authors](#authors)
 - [License](#license)
-- [Contact](#contact)
 
-## About The Project
+## About the Project
 
+A simple React application built with Vite.
 
 ### Built With
-- React
-- React-DOM
-- React-Create-App
-- Redux
-- API
-- npm
+
+- [React 18](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [npm](https://www.npmjs.com/)
 - CSS
 - ES6
 
-## Live Demo
+## Getting Started
 
-[Financial React App](https://Financial-React-App.herokuapp.com)
+### Prerequisites
 
-## Acknowledgements
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- npm (comes with Node.js)
 
-- [Microverse](https://www.microverse.org/)
-- [React](https://reactjs.org/)
+### Install
 
-## Show your support
+```bash
+npm install
+```
 
-Give a ⭐️ if you like this project!
+### Development
+
+```bash
+npm run dev
+```
+
+The app will be available at the URL shown in the terminal (usually `http://localhost:5173`).
+
+You can also use:
+
+```bash
+npm start
+```
+
+### Production build
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ## Authors
 
-- Felipe Enne - felipeenne@gmail.com | [Github Account https://github.com/FelipeEnne](https://github.com/FelipeEnne)
-
+- Felipe Enne - felipeenne@gmail.com | [GitHub](https://github.com/FelipeEnne)
 
 ## License
 
